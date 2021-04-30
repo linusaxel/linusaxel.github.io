@@ -1,0 +1,25 @@
+#draggable {
+  background: orange;
+  color: white;
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  white-space: nowrap;
+  text-align: center;
+  cursor: move;
+}
+
+#draggable:hover {
+  background: #e69500;
+}
+
+header {
+  background-color: #F4C724;
+  color: white;
+  text-transform: uppercase;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=style.css.map */
