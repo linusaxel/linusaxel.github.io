@@ -1,25 +1,30 @@
-#draggable {
-  background: orange;
-  color: white;
-  width: 200px;
-  height: 200px;
-  line-height: 200px;
-  white-space: nowrap;
-  text-align: center;
-  cursor: move;
+body {
+  background-color: #808080;
 }
 
-#draggable:hover {
-  background: #e69500;
+
+#content{
+  font-size: 40px;
+  font-family: 'Roboto Mono', monospace;
 }
 
-header {
-  background-color: #F4C724;
-  color: white;
-  text-transform: uppercase;
-  width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.container-1 {
+  display: flex;
 }
-/*# sourceMappingURL=style.css.map */
+
+.container-1 div{
+  border: 1px #ccc solid;
+  padding: 10px;
+}
+
+.box-1 {
+  flex: 1;
+}
+
+.box-2 {
+  flex: 5;
+}
+
+.box-3 {
+  flex: 1;
+}

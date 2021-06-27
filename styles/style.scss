@@ -1,16 +1,4 @@
-#draggable {
-  background: orange;
-  color: white;
-  width: 200px;
-  height: 200px;
-  line-height: 200px;
-  white-space: nowrap;
-  text-align: center;
-  cursor: move;
-  &:hover {
-    background: darken(orange, 5);
-  }
-}
+
 
 header {
   background-color: #F4C724;
@@ -18,4 +6,5 @@ header {
   text-transform: uppercase;
   width: 100%;
   align-items: center;
-  }
+  font-family: 'Roboto Mono', monospace;
+}
