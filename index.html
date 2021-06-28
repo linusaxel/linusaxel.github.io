@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,32 +12,44 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
     </style>
-    
+
     <!--Github, LinkedIn, Twitter logos -->
     <script src="https://kit.fontawesome.com/fcf220f6ec.js" crossorigin="anonymous"></script>
 
     <script src="script.js"></script>
 </head>
+
 <body>
 
-    <div class="container-1">
-        <div class="box-1">            
-            
-        </div>
-        <div id="content" class="box-2">            
-        </div>
-        <div class="box-3">            
-            
-        </div>
-    </div>
+    <div class="container">
 
+        <div id="content" class="box">
+            <pre id="parent-element">{ <button type="button" id="main-minimizable-button" onClick="minimizeMain()" class="far fa-minus-square json-button"></button></pre>
+            <pre class="minimizable">"name": Linus Eriksson,</pre>
+            <pre class="minimizable">"profession": Software Engineer,</pre>
+            <pre class="minimizable">"isNinja": true,</pre>
+            <pre id="hobbies-element" class="minimizable">"hobbies": [ <button type="button" id="hobbies-minimizable-button" onClick="minimizeHobbies()" class="far fa-minus-square json-button"></button></pre>
+            <pre class="minimizable minimizable-hobbies">    "Coding",</pre>
+            <pre class="minimizable minimizable-hobbies" >    "Guitar",</pre>
+            <pre class="minimizable minimizable-hobbies" >    "Cats"</pre>
+            <pre class="minimizable minimizable-hobbies" >    ],</pre>
+            <pre id="contacts-element" class="minimizable">"contacts": { <button type="button" id="contacts-minimizable-button" onClick="minimizeContacts()" class="far fa-minus-square json-button"></button></pre>
+            <pre
+                class="minimizable minimizable-contacts">    "e-mail": <a href="mailto:linusaxel@gmail.com" class="fas fa-envelope-square"></a>,</pre>
+            <pre
+                class="minimizable minimizable-contacts">    "github": <a href="https://github.com/linusaxel" class="fab fa-github"></a>,</pre>
+            <pre
+                class="minimizable minimizable-contacts">    "linkedin": <a href="https://www.linkedin.com/in/linusaxel/" class="fab fa-linkedin"></a>,</pre>
+            <pre
+                class="minimizable minimizable-contacts">    "twitter": <a href="https://twitter.com/l3nnybob" class="fab fa-twitter"></a></pre>
+            <pre class="minimizable minimizable-contacts">    }</pre>
+            <pre class="minimizable">}</pre>
 
-    <div>
-        <a href="https://github.com/linusaxel" class="fab fa-github"></a>
-        <a href="https://www.linkedin.com/in/linusaxel/" class="fab fa-linkedin"></a>
-        <a href="https://twitter.com/l3nnybob" class="fab fa-twitter"></a>
+        </div>
+
     </div>
 
 
 </body>
+
 </html>
