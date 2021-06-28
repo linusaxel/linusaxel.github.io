@@ -17,19 +17,23 @@ window.onload = (event) => {
 };
 
 function minimizeMain() {
-  var button = document.getElementById('main-minimizable-button');
-  var parentElement = document.getElementById('parent-element');
+  var button = document.getElementById("main-minimizable-button");
+  var parentElement = document.getElementById("parent-element");
 
   if (button.classList.contains("fa-plus-square")) {
     button.classList.remove("fa-plus-square");
     button.classList.add("fa-minus-square");
-    parentElement.innerHTML = "{ <button type=\"button\" id=\"main-minimizable-button\" onclick=\"minimizeMain()\" class=\"far fa-minus-square json-button\"></button>";
-  } else if (button.classList.contains("fa-minus-square")){
+    parentElement.innerHTML =
+      '{ <button type="button" id="main-minimizable-button" onclick="minimizeMain()" class="far fa-minus-square json-button"></button>';
+    displayElements("minimizable");
+    
+  } else if (button.classList.contains("fa-minus-square")) {
     button.classList.remove("fa-minus-square");
     button.classList.add("fa-plus-square");
-    parentElement.innerHTML = "{ <button type=\"button\" id=\"main-minimizable-button\" onclick=\"minimizeMain()\" class=\"far fa-plus-square json-button\"></button> }";
+    parentElement.innerHTML =
+      '{ <button type="button" id="main-minimizable-button" onclick="minimizeMain()" class="far fa-plus-square json-button"></button> }';
+    minimizeElements("minimizable");
   }
-  toggleMinimizeElements("minimizable");
 }
 
 function minimizeHobbies() {
@@ -39,13 +43,16 @@ function minimizeHobbies() {
   if (button.classList.contains("fa-plus-square")) {
     button.classList.remove("fa-plus-square");
     button.classList.add("fa-minus-square");
-    parentElement.innerHTML = "\"hobbies\": [ <button type=\"button\" id=\"hobbies-minimizable-button\" onclick=\"minimizeHobbies()\" class=\"far fa-minus-square json-button\"></button>";
-  } else if (button.classList.contains("fa-minus-square")){
+    parentElement.innerHTML =
+      '"hobbies": [ <button type="button" id="hobbies-minimizable-button" onclick="minimizeHobbies()" class="far fa-minus-square json-button"></button>';
+    displayElements("minimizable-hobbies");
+  } else if (button.classList.contains("fa-minus-square")) {
     button.classList.remove("fa-minus-square");
     button.classList.add("fa-plus-square");
-    parentElement.innerHTML = "\"hobbies\": [ <button type=\"button\" id=\"hobbies-minimizable-button\" onclick=\"minimizeHobbies()\" class=\"far fa-plus-square json-button\"></button> ],";
+    parentElement.innerHTML =
+      '"hobbies": [ <button type="button" id="hobbies-minimizable-button" onclick="minimizeHobbies()" class="far fa-plus-square json-button"></button> ],';
+    minimizeElements("minimizable-hobbies");
   }
-  toggleMinimizeElements("minimizable-hobbies")
 }
 
 function minimizeContacts() {
@@ -55,23 +62,28 @@ function minimizeContacts() {
   if (button.classList.contains("fa-plus-square")) {
     button.classList.remove("fa-plus-square");
     button.classList.add("fa-minus-square");
-    parentElement.innerHTML = "\"contacts\": { <button type=\"button\" id=\"contacts-minimizable-button\" onclick=\"minimizeContacts()\" class=\"far fa-minus-square json-button\"></button>";
-  } else if (button.classList.contains("fa-minus-square")){
+    parentElement.innerHTML =
+      '"contacts": { <button type="button" id="contacts-minimizable-button" onclick="minimizeContacts()" class="far fa-minus-square json-button"></button>';
+    displayElements("minimizable-contacts");
+  } else if (button.classList.contains("fa-minus-square")) {
     button.classList.remove("fa-minus-square");
     button.classList.add("fa-plus-square");
-    parentElement.innerHTML = "\"contacts\": { <button type=\"button\" id=\"contacts-minimizable-button\" onclick=\"minimizeContacts()\" class=\"far fa-plus-square json-button\"></button> }";
+    parentElement.innerHTML =
+      '"contacts": { <button type="button" id="contacts-minimizable-button" onclick="minimizeContacts()" class="far fa-plus-square json-button"></button> }';
+    minimizeElements("minimizable-contacts");
   }
-  toggleMinimizeElements("minimizable-contacts")
 }
 
-function toggleMinimizeElements(className) {
+function minimizeElements(className) {
   var elements = document.getElementsByClassName(className);
   for (var i = 0; i < elements.length; i++) {
-    if (elements[i].style.display !== "none") {
-      elements[i].style.display = "none";
-    } else {
-      elements[i].style.display = "block";
-    }
+    elements[i].style.display = "none";
   }
 }
 
+function displayElements(className) {
+  var elements = document.getElementsByClassName(className);
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].style.display = "block";
+  }
+}
