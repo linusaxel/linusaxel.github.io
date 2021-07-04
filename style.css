@@ -4,12 +4,14 @@ body {
 
 
 #content{
-  font-size: 3.5vw;
+  font-size: xxx-large;
+  text-align: left;
+  width: 60%;
   font-family: 'Roboto Mono', monospace;
 }
 
 .json-button {
-  font-size: 3vw;
+  font-size: xx-large;
   padding: 0;
   border: none;
   background: none;
@@ -27,9 +29,5 @@ body {
 
 .container div{
   padding: 10px;
-}
-
-.box {
-  width: 70%;
 }
 
