@@ -1,33 +1,29 @@
-body {
-  background-color: #a7a7a7;
+html { 
+  background: url(shooting_stars.gif) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
 }
 
-
-#content{
-  font-size: xxx-large;
-  text-align: left;
-  width: 60%;
-  font-family: 'Roboto Mono', monospace;
-}
-
-.json-button {
-  font-size: xx-large;
-  padding: 0;
-  border: none;
-  background: none;
-  color: #4f3072;
-}
-
-.clickable{
-  display: block;
-}
-
-.container {
+#json-container {
   display: flex;
-  justify-content: center;
+  justify-content: right;
+  margin-top: 8%;
+  margin-left: 12%;
 }
 
-.container div{
-  padding: 10px;
+a{
+  position: relative;
+  bottom: 10px;
 }
 
+span{
+  font-family: myFirstFont;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(Minecraftia-Regular.ttf);
+}
