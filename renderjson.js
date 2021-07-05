@@ -88,7 +88,9 @@ var module, window, define, renderjson=(function() {
     var text = function(txt) { return document.createTextNode(txt) };
     var div = function() { return document.createElement("div") };
     var span = function(classname) { var s = document.createElement("span");
-                                    if (classname == "string") {
+                                     if (classname) s.className = classname;
+                                     if (classname == "string") {
+                                        s.classList.add("hoverable");
                                         s.onclick = function() {
                                             if (s.innerText.includes("https://")) {
                                                 console.log("processing");
@@ -97,7 +99,6 @@ var module, window, define, renderjson=(function() {
                                             }
                                         }
                                     }
-                                     if (classname) s.className = classname;
                                      return s; };
     var A = function A(txt, classname, callback) { var a = document.createElement("a");
                                                    if (classname) a.className = classname;

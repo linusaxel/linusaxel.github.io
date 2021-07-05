@@ -23,6 +23,10 @@ a {
   overflow-wrap: break-word;
 }
 
+.hoverable {
+  cursor: pointer;
+}
+
 span {
   font-family: minecraftia;
   font-size: 20px;
@@ -36,6 +40,6 @@ span {
 
 @media only screen and (max-width: 500px) {
   span {
-    font-size: 11px;
+    font-size: 12px;
   }
 }
