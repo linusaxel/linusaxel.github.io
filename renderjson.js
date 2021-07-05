@@ -90,7 +90,6 @@ var module, window, define, renderjson=(function() {
     var span = function(classname) { var s = document.createElement("span");
                                      if (classname) s.className = classname;
                                      if (classname == "string") {
-                                        s.classList.add("hoverable");
                                         s.onclick = function() {
                                             if (s.innerText.includes("https://")) {
                                                 location.href = s.innerText.slice(1, -1);

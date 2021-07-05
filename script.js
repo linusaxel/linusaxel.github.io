@@ -1,7 +1,7 @@
 var linusJSON = `{
   "name": "Linus Eriksson",
   "profession": "Software Engineer",
-  "bolean": true,
+  "alive": true,
   "hobbies": ["Coding", "Guitar", "Cats"],
   "contact": {
       "e-mail": "linusaxel@gmail.com",

@@ -23,20 +23,18 @@ html {
 
 .boolean {
   color:rgb(216, 156, 83);
+  cursor: pointer;
 }
 
 .string {
   color:rgb(153, 235, 215);
+  cursor: pointer;
 }
 
 a {
-  color: hotpink;
+  color: rgb(249, 132, 190);
   text-decoration: none;
   overflow-wrap: break-word;
-}
-
-.hoverable {
-  cursor: pointer;
 }
 
 span {
