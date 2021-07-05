@@ -19,14 +19,3 @@ renderjson.set_icons('+', '-')
 document.getElementById("json-container").appendChild(
   renderjson(parsedJSON)
 );
-
-
-// var strings = document.getElementsByClassName("string");
-// for (var item of strings) {
-//   item.onclick = test;
-// }
-// console.log(strings);
-
-// function test() {
-//   console.log("Test");
-// }
