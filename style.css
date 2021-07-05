@@ -1,5 +1,10 @@
-html { 
-  background: url(shooting_stars.gif) no-repeat center center fixed; 
+@font-face {
+  font-family: minecraftia;
+  src: url(Minecraftia-Regular.ttf);
+}
+
+html {
+  background: url(shooting_stars.gif) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -8,22 +13,29 @@ html {
 }
 
 #json-container {
-  display: flex;
-  justify-content: right;
-  margin-top: 8%;
-  margin-left: 12%;
+  margin-top: 5%;
+  margin-left: 5%;
 }
 
-a{
-  position: relative;
-  bottom: 10px;
+a {
+  color: hotpink;
+  text-decoration: none;
+  overflow-wrap: break-word;
 }
 
-span{
-  font-family: myFirstFont;
+span {
+  font-family: minecraftia;
+  font-size: 20px;
 }
 
-@font-face {
-  font-family: myFirstFont;
-  src: url(Minecraftia-Regular.ttf);
+@media only screen and (min-width: 500px) and (max-width: 850px) {
+  span {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  span {
+    font-size: 8px;
+  }
 }
