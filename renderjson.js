@@ -93,8 +93,6 @@ var module, window, define, renderjson=(function() {
                                         s.classList.add("hoverable");
                                         s.onclick = function() {
                                             if (s.innerText.includes("https://")) {
-                                                console.log("processing");
-                                                console.log(s.innerText.slice(1, -1));
                                                 location.href = s.innerText.slice(1, -1);
                                             }
                                         }
