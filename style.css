@@ -4,7 +4,7 @@
 }
 
 html {
-  background: url(shooting_stars.gif) no-repeat center center fixed;
+  background: rgb(58, 58, 58);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
